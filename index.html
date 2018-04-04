@@ -5,22 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XFCE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <h1 class="brand"><a href="#">XCFE</a></h1>
-        <ul>
-			<li><a href="https://xfce.org" title="Go to the homepage" class="active">Home</a></li>
-			<li><a href="https://docs.xfce.org" title="Official documentation">Docs</a></li>
-			<li><a href="http://archive.xfce.org" title="Download location of tarballs">Archive</a></li>
-			<li><a href="https://wiki.xfce.org" title="Community documentation">Wiki</a></li>
-			<li><a href="https://forum.xfce.org" title="Community forums">Forum</a></li>
-			<li><a href="https://bugzilla.xfce.org" title="Report and track bugs">Bugs</a></li>
-			<li><a href="https://blog.xfce.org" title="Visit the blog">Blog</a></li>
-			<li><a href="https://xfce.org/getinvolved/translation" title="Help translating the Xfce project">Translate</a></li>
-			<li><a href="https://git.xfce.org" title="Project repositories">GIT</a></li>
-		</ul>
+    <header class="navbar-main">
+        <h1 class="navbar-main__brand "><a href="#"> <img src="imgrs/xfce2.png" alt="XFCE"> </a></h1>
+        <nav class="navbar-main__nav nav">
+            <ul>
+                <li><a href="https://xfce.org" title="Go to the homepage" class="active">Home</a></li>
+                <li><a href="https://docs.xfce.org" title="Official documentation">Docs</a></li>
+                <li><a href="http://archive.xfce.org" title="Download location of tarballs">Archive</a></li>
+                <li><a href="https://wiki.xfce.org" title="Community documentation">Wiki</a></li>
+                <li><a href="https://forum.xfce.org" title="Community forums">Forum</a></li>
+                <li><a href="https://bugzilla.xfce.org" title="Report and track bugs">Bugs</a></li>
+                <li><a href="https://blog.xfce.org" title="Visit the blog">Blog</a></li>
+                <li><a href="https://xfce.org/getinvolved/translation" title="Help translating the Xfce project">Translate</a></li>
+                <li><a href="https://git.xfce.org" title="Project repositories">GIT</a></li>
+        </nav>
+        <div class="toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    </header>
+    <nav class="navbar-second nav"> 
+            <ul >
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="/download">Télécharger</a></li>
+                <li><a href="/community">Communauté</a></li>
+                <li><a href="/getinvolved">Contribuer</a></li>
+                <li><a href="/projects">Projets</a></li>
+            </ul>
     </nav>
+    <section class="home" id="home">
+        <div class="slider">
+
+        </div>
+    </section>
 </body>
+
+<script>
+    $(document).ready(function(){
+        
+    });
+    function toggleNav(){
+        $('.nav').slideToggle() ;
+    }
+</script>
 </html>

@@ -1,0 +1,106 @@
+.navbar-main {
+    background-color: #313131;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    &__brand {
+        img {
+            height: 24px;
+            width: unset;
+        }
+    }
+    &__nav {
+        display: block;
+        li {
+            display: inline;
+            a {
+                color: white;
+                font-family: $sans_serif-bold;
+                padding: 5px 10px;
+                font-size: .8rem;
+                font-weight: 700;
+                letter-spacing: .04rem;
+                display: inline-block;
+                &.active::after,
+                &:hover::after {
+                    content: '';
+                    display: block;
+                    margin-top: 5px;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.navbar-second {
+    
+    padding: 10px 20px;
+    text-align: right;
+    background-color: #272727;
+    li {
+        display: inline;
+        a {
+            color: rgb(255, 255, 255);
+            font-family: $sans_serif-bold;
+            padding: 0 10px;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.toggle{
+    display: none ;
+    position: fixed ;
+    top: 10px;
+    right: 20px ;
+    span{
+        width: 22px ;
+        height: 2px; 
+        margin: 5px ;
+        display: block ;
+        background-color: #fff;
+    }
+}
+
+//
+//
+//
+/// Break point ( screen < 740px )
+@media screen and (max-width: 740px) {
+    .toggle{
+        display: block;
+    }
+    .navbar-main {
+        flex-direction: column;
+        &__brand {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__nav {
+            display: none;
+            padding: 40px; 
+            li {
+                display: inline-block;
+                height: 40px ;
+            }
+        }
+    }
+    .navbar-second {
+        display: none;
+        padding: 20px 60px 60px;
+        text-align: left;
+        
+        background-color: #313131;
+        li {
+            display: inline-block;
+            height: 40px ;
+        }
+    }
+}
