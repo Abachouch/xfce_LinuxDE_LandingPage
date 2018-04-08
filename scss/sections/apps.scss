@@ -1,0 +1,22 @@
+.apps {
+    padding: 20px;
+    &_list {
+        &_item {
+            min-height: 300px;
+            @extend .link-card;
+            text-align: center;
+            padding: 20px;
+            margin: 15px 0;
+            img {
+                display: inline-block;
+                width: 70px;
+            }
+            h3 {
+                padding: 30px 0 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,3 +1,19 @@
 @import 'lib/variables' ;
-/** header **/
-@import 'header_top' ;
+/** typo / reset **/
+@import 'typo' ;
+/** navbar / headertop **/
+@import 'sections/header_top' ;
+/** hero **/
+@import 'sections/hero' ;
+/** about **/
+@import 'sections/about' ;
+/** features **/
+@import 'sections/features' ;
+/** apps **/
+@import 'sections/apps' ;
+/** download **/
+@import 'sections/download' ;
+/** distros **/
+@import 'sections/distros' ;
+/** footer **/
+@import 'sections/footer' ;

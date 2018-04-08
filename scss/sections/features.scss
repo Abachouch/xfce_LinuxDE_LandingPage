@@ -1,0 +1,20 @@
+.features {
+    &_list {
+        &_item {
+            display: block;
+            background: #F5F5F5;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+            h3 {
+                color: #2A3D57;
+                padding-bottom: 20px;
+            }
+            p {
+                line-height: 2.5rem;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}

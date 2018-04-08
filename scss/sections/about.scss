@@ -1,0 +1,19 @@
+
+.about {
+    &_content-wraper {
+        padding: 20px;
+    }
+    &_text {
+        line-height: 24px;
+        max-width: 480px;
+        margin: 5px 0;
+        text-align: justify;
+        padding-top: 10px;
+    }
+    &_img {
+        margin-top: 40px;
+        img {
+            width: 100%;
+        }
+    }
+}

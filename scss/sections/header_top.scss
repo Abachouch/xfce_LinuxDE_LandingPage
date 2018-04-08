@@ -1,0 +1,82 @@
+.navbar {
+    margin: 0;
+    border: initial;
+    .navbar-xfce {
+        background-color: #333333;
+    }
+    .icon-bar {
+        background-color: #fff;
+    }
+    #navbar {
+        max-width: 620px;
+    }
+    .nav>li>a {
+        font-family: $fontTitle;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 12px;
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-transform: uppercase;
+        &::after,
+        &.active {
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            display: inline-block;
+            background-color: #fff;
+            width: 0;
+            height: 2px;
+            transition: width 200ms ease;
+        }
+        &:hover,
+        &.active {
+            background-color: transparent;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+    #nav1 {
+        .nav>li>a {
+            color: #828282;
+        }
+        .nav>li.active>a {
+            color: #fff;
+        }
+    }
+    #nav2 {
+        .nav>li>a {
+            color: #FFFFFF;
+        }
+    }
+    .borderr {
+        border: 1px tomato dashed;
+    }
+    .borderg {
+        border: 1px mediumseagreen dashed;
+    }
+    .borderb {
+        border: 1px royalblue dashed;
+    }
+    @media screen and (max-width: 767px) {
+        #nav1 {
+            .nav>li>a {
+                font-size: 20px;
+            }
+        }
+        #nav2 {
+            .nav>li>a {
+                font-size: 24px;
+            }
+        }
+        .nav {
+            padding-top: 30px;
+            padding-bottom: 100px;
+        }
+    }
+}

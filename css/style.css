@@ -1,6 +1,7 @@
-/** header **/
+/** typo / reset **/
 body {
-  color: #333333; }
+  color: #333333;
+  font-family: "Open Sans"; }
 
 ul {
   list-style: none; }
@@ -50,6 +51,11 @@ p {
     margin-top: 15px;
     background-color: #333333; }
 
+.form-control {
+  border-radius: 1px;
+  background-color: #E8E8E8;
+  width: 90%; }
+
 .link-card, .apps_list_item {
   border-radius: 1px;
   transform: all 300ms ease;
@@ -60,16 +66,21 @@ p {
     background: rgba(245, 245, 245, 0.5); }
 
 .btn-primary {
-  background-color: #479DC1;
-  border-color: #479DC1;
-  border-radius: 1px;
+  display: inline-block;
+  width: 100%;
+  padding: 6px 10px;
+  user-select: none;
+  margin: 5px 0;
+  text-align: center;
+  background: #3a7bd5;
+  border-radius: 2px;
   cursor: pointer; }
   .btn-primary:hover {
-    color: #ffffff !important;
-    background-color: #15678a; }
+    text-decoration: none;
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5); }
 
-/************************************/
-/**********************************/
 .bg2 {
   background-image: url("../imgrs/bg1.jpg");
   background-attachment: fixed;
@@ -77,11 +88,7 @@ p {
   background-size: cover;
   height: 500px; }
 
-/************************************/
-/*
- ##########   NAVABR
- */
-/*************************************/
+/** navbar / headertop **/
 .navbar {
   margin: 0;
   border: initial; }
@@ -137,11 +144,7 @@ p {
       padding-top: 30px;
       padding-bottom: 100px; } }
 
-/***********************************************/
-/*
-    ######## HERO ########
-*/
-/**********************************************/
+/** hero **/
 .hero {
   background-image: url("../imgrs/bghero.jpg");
   background-repeat: no-repeat; }
@@ -151,6 +154,7 @@ p {
   .hero_content-wraper {
     max-width: 430px;
     margin: 0 auto;
+    padding: 20px;
     position: relative;
     top: 25%; }
   .hero_title {
@@ -161,19 +165,12 @@ p {
 .button-wraper {
   width: 250px;
   margin: 20px auto; }
-  .button-wraper .btn {
-    width: 100%;
-    margin-bottom: 5px; }
 
 @media screen and (max-width: 767px) {
   .hero_wraper {
     height: auto;
     padding: 60px 0; } }
-/***********************************************/
-/*
-    ######## ABOUT ########
-*/
-/**********************************************/
+/** about **/
 .about_content-wraper {
   padding: 20px; }
 .about_text {
@@ -187,11 +184,7 @@ p {
   .about_img img {
     width: 100%; }
 
-/**************************/
-/*
- ######## FEATURES ######
-*/
-/*************************/
+/** features **/
 .features_list_item {
   display: block;
   background: #F5F5F5;
@@ -206,15 +199,11 @@ p {
     font-size: 14px;
     letter-spacing: 0.1em; }
 
-/**************************/
-/*
- ######## APPS ######
-*/
-/*************************/
+/** apps **/
 .apps {
   padding: 20px; }
   .apps_list_item {
-    min-height: 250px;
+    min-height: 300px;
     text-align: center;
     padding: 20px;
     margin: 15px 0; }
@@ -226,22 +215,22 @@ p {
     .apps_list_item p {
       font-size: 14px; }
 
-/**************************/
-/*
- ######## DOWNLOAD ######
-*/
-/*************************/
+/** download **/
 .download {
+  background-color: #fcfcfc;
   padding: 40px 0; }
   .download_card {
     margin-top: 32px;
     min-height: 220px;
     padding: 40px 30px; }
-    .download_card_text {
-      margin-top: 15px; }
+    .download_card_text, .download_card_title {
+      color: inherit; }
+    .download_card.btn-primary {
+      color: white; }
     .download_card.link-card, .download_card.apps_list_item {
-      background: #F5F5F5; }
+      background: #f0f0f0; }
 
+/** distros **/
 .dist {
   margin: 40px 0; }
   .dist_title {
@@ -256,6 +245,7 @@ p {
     .dist_wraper_img {
       width: 100%; }
 
+/** footer **/
 footer {
   padding: 40px 0;
   background-color: #4F4F4F;
@@ -265,19 +255,27 @@ footer {
     footer .section-title::after {
       background-color: #F5F5F5; }
 
-.form-control {
-  border-radius: 1px;
-  background-color: #E8E8E8;
-  width: 90%; }
-
-.blog-post a {
+.blog-post {
+  padding: 5px 0;
+  display: block;
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 13px;
   color: #F2F2F2; }
-.blog-post h2 > a {
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: normal; }
+  .blog-post:hover {
+    text-decoration: none;
+    color: #F2F2F2; }
+  .blog-post span {
+    display: block; }
+    .blog-post span:nth-child(2) {
+      font-size: 12px;
+      color: #acacac; }
+
+.copy {
+  text-align: center;
+  color: grey;
+  font-size: 10px;
+  padding: 2px;
+  margin: 0;
+  background-color: #161616; }
 
 /*# sourceMappingURL=style.css.map */

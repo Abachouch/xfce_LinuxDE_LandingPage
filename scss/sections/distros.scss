@@ -1,0 +1,17 @@
+.dist {
+    margin: 40px 0;
+    &_title {
+        color: #479DC1;
+        padding-bottom: 30px;
+    }
+    &_wraper {
+        height: 120px;
+        width: 120px;
+        padding: 20px;
+        display: inline-block;
+        margin: 0 10px;
+        &_img {
+            width: 100%;
+        }
+    }
+}

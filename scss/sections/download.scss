@@ -1,0 +1,19 @@
+.download {
+    background-color: #fcfcfc;
+    padding: 40px 0;
+    &_card {
+        margin-top: 32px;
+        min-height: 220px;
+        padding: 40px 30px;
+        &_text,
+        &_title {
+            color: inherit;
+        }
+        &.btn-primary {
+            color: white;
+        }
+        &.link-card {
+            background: #f0f0f0
+        }
+    }
+}
