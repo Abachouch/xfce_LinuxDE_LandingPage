@@ -238,10 +238,9 @@ p {
 /**********************************************/
 
 .about {
-    border: 1px tomato dashed;
     &_content-wraper {
         padding: 20px;
-        border: 1px tomato dashed;
+       
     }
     &_text {
         line-height: 24px;

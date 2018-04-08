@@ -174,21 +174,18 @@ p {
     ######## ABOUT ########
 */
 /**********************************************/
-.about {
-  border: 1px tomato dashed; }
-  .about_content-wraper {
-    padding: 20px;
-    border: 1px tomato dashed; }
-  .about_text {
-    line-height: 24px;
-    max-width: 480px;
-    margin: 5px 0;
-    text-align: justify;
-    padding-top: 10px; }
-  .about_img {
-    margin-top: 40px; }
-    .about_img img {
-      width: 100%; }
+.about_content-wraper {
+  padding: 20px; }
+.about_text {
+  line-height: 24px;
+  max-width: 480px;
+  margin: 5px 0;
+  text-align: justify;
+  padding-top: 10px; }
+.about_img {
+  margin-top: 40px; }
+  .about_img img {
+    width: 100%; }
 
 /**************************/
 /*
