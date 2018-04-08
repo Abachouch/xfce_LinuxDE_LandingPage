@@ -1,54 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XFCE</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="navbar-main">
-        <h1 class="navbar-main__brand "><a href="#"> <img src="imgrs/xfce2.png" alt="XFCE"> </a></h1>
-        <nav class="navbar-main__nav nav">
-            <ul>
-                <li><a href="https://xfce.org" title="Go to the homepage" class="active">Home</a></li>
-                <li><a href="https://docs.xfce.org" title="Official documentation">Docs</a></li>
-                <li><a href="http://archive.xfce.org" title="Download location of tarballs">Archive</a></li>
-                <li><a href="https://wiki.xfce.org" title="Community documentation">Wiki</a></li>
-                <li><a href="https://forum.xfce.org" title="Community forums">Forum</a></li>
-                <li><a href="https://bugzilla.xfce.org" title="Report and track bugs">Bugs</a></li>
-                <li><a href="https://blog.xfce.org" title="Visit the blog">Blog</a></li>
-                <li><a href="https://xfce.org/getinvolved/translation" title="Help translating the Xfce project">Translate</a></li>
-                <li><a href="https://git.xfce.org" title="Project repositories">GIT</a></li>
-        </nav>
-        <div class="toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <header class="navbar ">
+        <div class="container-fluid navbar-xfce">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="imgrs/xfce2.png" alt="XFCE logo">
+                </a>
+            </div>
+            <div class="  navbar-right collapse navbar-collapse " id="navbar">
+                <nav id="nav1" class="col-xs-6 col-sm-12 ">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">WIKI</a>
+                        </li>
+                        <li>
+                            <a href="#">BUGS</a>
+                        </li>
+                        <li>
+                            <a href="#">FORUM</a>
+                        </li>
+                        <li>
+                            <a href="#">DOCS</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">TRANSLATE</a>
+                        </li>
+                        <li>
+                            <a href="#">GIT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="nav2" class="col-xs-6 col-sm-12 ">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">DOWNLOAD</a>
+                        </li>
+                        <li>
+                            <a href="#">FEATURES</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
     </header>
-    <nav class="navbar-second nav"> 
-            <ul >
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/about">À propos</a></li>
-                <li><a href="/download">Télécharger</a></li>
-                <li><a href="/community">Communauté</a></li>
-                <li><a href="/getinvolved">Contribuer</a></li>
-                <li><a href="/projects">Projets</a></li>
+
+    <section class="hero" id="hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6 hero_wraper">
+                    <div class="hero_content-wraper">
+                        <h1 class="hero_title">Xfce Desktop Environment</h1>
+                        <p class="hero_desc">Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and
+                            low on system resources, while still being visually appealing and user friendly. </p>
+
+                        <div class="button-wraper">
+                            <a class="btn btn-primary">download</a>
+                            <a href="#">ChangeLog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <div class="container   ">
+            <h1 class="section-title">Xfce Desktop Environment</h1>
+            <div class="row">
+                <div class="col-sm-6  about_content-wraper">
+
+                    <p class="about_text">Xfce embodies the traditional UNIX philosophy of modularity and re-usability. It consists of a number
+                        of components that provide the full functionality one can expect of a modern desktop environment.
+                        They are packaged separately and you can pick among the available packages to create the optimal
+                        personal working environment.
+                    </p>
+                    <p class="about_text">Another priority of Xfce is adherence to standards, specifically those defined at freedesktop.org.
+                    </p>
+                    <p class="about_text">Xfce can be installed on several UNIX platforms. It is known to compile on Linux, NetBSD, FreeBSD, OpenBSD,
+                        Solaris, Cygwin and MacOS X, on x86, PPC, Sparc, Alpha...</p>
+                </div>
+                <div class="col-sm-6  about_img">
+                    <img src="imgrs/bgabout.jpg" alt="xcfe on macpro">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="features">
+        <div class="container">
+            <h1 class="section-title">FEATURES &amp; PROJECTS</h1>
+            <ul class="row features_list">
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
+                <li class="col-sm-6 col-md-4">
+                    <a href="#" class="features_list_item link-card">
+                        <h3>Window Manager</h3>
+                        <p>It manages the placement of application windows on the screen, provides window decorations and manages
+                            workspaces or virtual desktops. </p>
+                    </a>
+                </li>
             </ul>
-    </nav>
-    <section class="home" id="home">
-        <div class="slider">
 
         </div>
     </section>
+    <!-- apps section -->
+    <section class="apps" id="apps">
+        <div class="container">
+            <h2 class="section-title">APPLICATIONS</h2>
+            <ul class="row apps_list">
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/midori.png" alt="midori browser">
+                        <h3>MIDORI BROWSER</h3>
+                        <p>Midori is a lightweight Web browser.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/terminal.png" alt="midori browser">
+                        <h3>TERMINAL</h3>
+                        <p>Terminal is a modern terminal emulator featuring tabs and transparent backgrounds.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/xfburn.png" alt="midori browser">
+                        <h3>XFBURN</h3>
+                        <p>Xfburn is an application to create and burn CD's and DVD's.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/calendar.png" alt="midori browser">
+                        <h3>ORAGE</h3>
+                        <p>A simple calendar application with reminders.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/mixer.png" alt="midori browser">
+                        <h3>MIXER</h3>
+                        <p>Allows you to change the volume of the different audio tracks.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <div class="apps_list_item">
+                        <img src="imgrs/ristretto.png" alt="midori browser">
+                        <h3>IMAGE VIEWER</h3>
+                        <p>Ristretto is a lightweight image viewer.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bg2"></section>
+    <section class="download">
+        <div class="container">
+            <h1 class="section-title">DOWNLOAD</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="download_card  btn-primary ">
+                        <h3 class="download_card_title">Stable release 4.12</h3>
+                        <p class="download_card_text">Xfce 4.12 is the most recent version of the Xfce desktop environment.</p>
+                    </div>
+                    <a href="#">changelog</a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="download_card link-card">
+                        <h3 class="download_card_title">Individual releases</h3>
+                        <p class="download_card_text">Each package in Xfce can make individual stable or development releases, including the core packages
+                            (as described in the release model)</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section class="dist">
+            
+            <div class="container">
+                <h3 class="dist_title">XCFE COMMES WITH </h3>
+                <div class="dist_wraper link-card">
+                    <img class="dist_wraper_img" src="imgrs/xubuntu.png" alt="XUbuntu">
+                </div>
+
+                <div class="dist_wraper link-card">
+                    <img class="dist_wraper_img" src="imgrs/zenwalk.png" alt="XUbuntu">
+                </div>
+
+                <div class="dist_wraper  link-card">
+                    <img class="dist_wraper_img" src="imgrs/fedora.png" alt="XUbuntu">
+                </div>
+
+                <div class="dist_wraper link-card">
+                    <img class="dist_wraper_img" src="imgrs/manjaro.png" alt="XUbuntu">
+                </div>
+            </div>
+        </section>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="section-title">CONTACT US</h1>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Message:</label>
+                            <textarea class="form-control" rows="5" id="msg"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="section-title">Latest Blog posts</h1>
+
+                    <div class="blog-post">
+                        <h3>
+                            <a href="#">Lorem, ipsum dolor.</a>
+                        </h3>
+                        <a href="#">Jhon Doe 4/03/2018</a>
+                    </div>
+                    <div class="blog-post">
+                        <h3>
+                            <a href="#">Lorem, ipsum dolor.</a>
+                        </h3>
+                        <a href="#">Jhon Doe 4/03/2018</a>
+                    </div>
+                    <div class="blog-post">
+                        <h3>
+                            <a href="#">Lorem, ipsum dolor.</a>
+                        </h3>
+                        <a href="#">Jhon Doe 4/03/2018</a>
+                    </div>
+                    <div class="blog-post">
+                        <h3>
+                            <a href="#">Lorem, ipsum dolor.</a>
+                        </h3>
+                        <a href="#">Jhon Doe 4/03/2018</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
-<script>
-    $(document).ready(function(){
-        
-    });
-    function toggleNav(){
-        $('.nav').slideToggle() ;
-    }
-</script>
 </html>

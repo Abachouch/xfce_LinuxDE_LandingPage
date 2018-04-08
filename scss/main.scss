@@ -1,8 +1,3 @@
-@import 'css_reset' ;
-@import 'variables' ;
+@import 'lib/variables' ;
+/** header **/
 @import 'header_top' ;
-
-body{
-    margin: 0 ;
-    padding: 0 ;
-}
